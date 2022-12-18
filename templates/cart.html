@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+</head>
+<body>
+    <a href="/">Products</a>
+    <a href="/cart/remove/all">Remove all products from cart</a>
+    <hr>
+
+    <h3>Cart</h3>
+    <code>Click any product to remove from the cart.</code>
+
+    {{ range .products }}
+        <pre><a href="/cart/remove/{{ .ID }}">{{ .Title }}</a></pre>
+    {{ end }}
+</body>
+</html>
