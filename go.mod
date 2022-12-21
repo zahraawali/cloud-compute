@@ -1,4 +1,4 @@
-module github.com/h3ssan/cloud_compute
+module github.com/zah/cloud_compute
 
 go 1.19
 
